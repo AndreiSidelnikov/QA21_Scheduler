@@ -1,0 +1,12 @@
+com/telran/scheduler/fw/UserHelper.java
+ com.telran.scheduler.fw.UserHelper
+com/telran/scheduler/fw/HelperBase.java
+ com.telran.scheduler.fw.HelperBase
+com/telran/scheduler/tests/LoginTests.java
+ com.telran.scheduler.tests.LoginTests
+com/telran/scheduler/tests/TestBase.java
+ com.telran.scheduler.tests.TestBase
+com/telran/scheduler/fw/ApplicationManager.java
+ com.telran.scheduler.fw.ApplicationManager
+com/telran/scheduler/tests/OpenAppTest.java
+ com.telran.scheduler.tests.OpenAppTest
