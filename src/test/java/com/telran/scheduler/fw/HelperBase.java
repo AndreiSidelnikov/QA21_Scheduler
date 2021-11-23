@@ -11,7 +11,7 @@ public class HelperBase {
         this.driver = driver;
     }
 
-    public void tap (By locator) { // click
+    public void tap (By locator) {
         driver.findElement(locator).click();
     }
 
@@ -23,4 +23,11 @@ public class HelperBase {
         }
     }
 
+    public void hideKeyboard() {
+        driver.hideKeyboard();
+    }
+
+    public boolean isElementPresent(By locator) {
+        return driver.findElements(locator).size() > 0;
+    }
 }
