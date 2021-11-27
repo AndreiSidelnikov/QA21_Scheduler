@@ -6,6 +6,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Currency;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
@@ -14,6 +15,16 @@ public class ApplicationManager {
 
     UserHelper user;
     EventHelper event;
+    CurrencyHelper currency;
+    WageHelper wage;
+
+    public CurrencyHelper getCurrency() {
+        return currency;
+    }
+
+    public WageHelper getWage() {
+        return wage;
+    }
 
     public UserHelper getUser() {
         return user;
@@ -38,6 +49,8 @@ public class ApplicationManager {
 
         user = new UserHelper(driver);
         event = new EventHelper(driver);
+        currency = new CurrencyHelper(driver);
+        wage = new WageHelper(driver);
     }
 
     public void stop() {

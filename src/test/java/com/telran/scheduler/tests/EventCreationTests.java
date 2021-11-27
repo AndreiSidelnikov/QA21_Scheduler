@@ -24,6 +24,8 @@ public class EventCreationTests extends TestBase{
         app.getEvent().tapOnPlusButton();
         //tap on Pencil
         app.getEvent().tapOnPencil();
+        Thread.sleep(10000);
+        app.getEvent().moveElementRightToLeft();
         //fill Event Form
         app.getEvent().fillEventCreationForm(new Event().setEventTitle("Event")
                 .setEventType("1").setBreaks(2).setWage("150"));
